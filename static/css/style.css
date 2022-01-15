@@ -75,6 +75,11 @@ p.project-description {
     color:var(--text);
 }
 
+#projects-cs {
+    margin-top: 49px;
+    margin-bottom: 59px;
+}
+
 nav {
     position: fixed;
     top: 0;
