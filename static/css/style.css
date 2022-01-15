@@ -1,0 +1,108 @@
+/* variables & default font size */
+:root {
+    --background: rgb(24, 22, 20);
+    --text: rgb(196, 196, 196);
+    --red: #EB8078;
+    --yellow: #F2C595;
+    font-size: 16px;
+}
+
+/* colors! */
+.yellow {
+    color: var(--yellow);
+    filter: brightness(90%);
+}
+
+.red {
+    color: var(--red);
+    filter: brightness(90%);
+}
+
+/* styling yep */
+body {
+    font-family: 'Roboto Mono', 'Noto Mono', monospace;
+    color: var(--text);
+    background-color: var(--background);
+    
+}
+
+section {
+    margin-top: 99px;
+    margin-bottom: 99px;
+    margin-left: calc(9% - 9px);
+    margin-right: calc(9% - 9px);
+}
+
+#about {
+    margin-top: 119px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color:var(--yellow)
+}
+
+a:visited {
+    color:var(--yellow)
+}
+
+a:hover {
+    filter: brightness(130%);
+}
+
+a.project {
+    font-size: 24px;
+}
+
+span.project-date {
+    color:var(--red)
+}
+
+p.project-description {
+    font-size: 16px;
+    color:var(--text);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 99px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 39px;
+    padding-left: calc(9% - 9px);
+
+    background-color: var(--background);
+    z-index: 9;
+}
+
+
+/* mobile nav */
+@media screen and (max-width: 450px) {
+    nav {
+        height: 59px;
+    }
+    nav a {
+        display: none;
+    }
+    #about {
+        margin-top: 79px;
+    }
+    #title-logo {
+        display: inline;
+    }
+}
