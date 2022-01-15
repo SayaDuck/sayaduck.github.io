@@ -27,6 +27,7 @@ body {
 }
 
 section {
+    scroll-margin-top: 99px;
     margin-top: 99px;
     margin-bottom: 99px;
     margin-left: calc(9% - 9px);
@@ -89,7 +90,6 @@ nav {
     background-color: var(--background);
     z-index: 9;
 }
-
 
 /* mobile nav */
 @media screen and (max-width: 450px) {
