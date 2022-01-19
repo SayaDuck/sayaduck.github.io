@@ -3,19 +3,17 @@
     --background: rgb(24, 22, 20);
     --text: rgb(196, 196, 196);
     --red: #EB8078;
-    --yellow: #F2C595;
+    --yellow: #EBBA78;
     font-size: 16px;
 }
 
 /* colors! */
 .yellow {
     color: var(--yellow);
-    filter: brightness(90%);
 }
 
 .red {
     color: var(--red);
-    filter: brightness(90%);
 }
 
 /* styling yep */
@@ -94,6 +92,23 @@ nav {
 
     background-color: var(--background);
     z-index: 9;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3B201E;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3B201E;
 }
 
 /* mobile nav */
